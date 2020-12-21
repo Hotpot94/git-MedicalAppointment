@@ -4,6 +4,8 @@ import RegisterUI  from './RegisterUI';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ResetPasswordUI from './ResetPasswordUI';
 import myProfile from "./myProfilePage";
+import ViewAllAccountUI from "./ViewAllAccountUI";
+import SACreateAccountUI from "./SACreateAccountUI";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/register" component={RegisterUI}/>
           <Route path="/resetPassword" component={ResetPasswordUI}/>
           <Route path="/myProfile" component={myProfile}/>
+          <Route path="/viewAllAccount" component={ViewAllAccountUI}/>
+          <Route path="/SACreateAccount" component={SACreateAccountUI}/>
         </Switch>
       </Router>
         

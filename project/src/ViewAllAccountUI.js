@@ -10,3 +10,5 @@ function ViewAllAccountUI()
         </div>
     )
 }
+
+export default ViewAllAccountUI
