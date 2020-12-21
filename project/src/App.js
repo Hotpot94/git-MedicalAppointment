@@ -1,11 +1,11 @@
 import './App.css';
-import LoginUI from './LoginUI';
-import RegisterUI  from './RegisterUI';
+import LoginUI from './User/LoginUI';
+import RegisterUI  from './Patient/RegisterUI';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import ResetPasswordUI from './ResetPasswordUI';
-import myProfile from "./myProfilePage";
-import ViewAllAccountUI from "./ViewAllAccountUI";
-import SACreateAccountUI from "./SACreateAccountUI";
+import ResetPasswordUI from './User/ResetPasswordUI';
+import myProfile from "./User/myProfilePage";
+import ViewAllAccountUI from "./SystemAdmin/ViewAllAccountUI";
+import CreateAccountUI from "./SystemAdmin/CreateAccountUI";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/resetPassword" component={ResetPasswordUI}/>
           <Route path="/myProfile" component={myProfile}/>
           <Route path="/viewAllAccount" component={ViewAllAccountUI}/>
-          <Route path="/SACreateAccount" component={SACreateAccountUI}/>
+          <Route path="/createAccount" component={CreateAccountUI}/>
         </Switch>
       </Router>
         

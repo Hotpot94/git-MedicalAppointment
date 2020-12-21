@@ -1,17 +1,16 @@
 import React from 'react'
 import {Form, Button, Card, Container} from 'react-bootstrap'
-import NavBar from "./components/navbarUI";
+import {Link} from 'react-router-dom';
 
-function myProfile() {
+function CreateAccountUI() {
     return (
-       <div>
-          <NavBar/>
-            <Container className="d-flex align-items-center justify-content-center"
+      <div style={{backgroundColor: '#98AFC7'}}>
+         <Container className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "100vh"}}>
-          <div className="w-100" style={{maxWidth: "500px"}}>
+         <div className="w-100" style={{maxWidth: "500px"}}>
             <Card>
              <Card.Body>
-                 <h2 className= "text-center mb-4">My Profile</h2>
+                 <h2 className= "text-center mb-4">Create your Account</h2>
                  <Form>
                      <Form.Group id = "FirstName">
                         <Form.Label>First Name</Form.Label>
@@ -41,15 +40,30 @@ function myProfile() {
                         <Form.Label>Telephone</Form.Label>
                         <Form.Control type="invalid" required/>
                      </Form.Group>
-                     <Button className="w-100" type="submit">Update</Button>
+                     <hr  style={{
+                                borderColor : '#000000',
+                                marginTop : '50px'
+                            }}/>
+                     <Form.Group id = "password">
+                        <Form.Label>Passsword</Form.Label>
+                        <Form.Control type="password" required/>
+                     </Form.Group>
+                     <Form.Group id = "ConfirmPassword">
+                        <Form.Label>Confirm Passsword</Form.Label>
+                        <Form.Control type="password" required/>
+                     </Form.Group>
+                     <Button className="w-100" type="submit">Sign Up</Button>
                  </Form>
+            <div className="w-100 text-center mt-2">
+                Already have an account? <Link to="/"><u>Login!</u></Link>
+            </div>
              </Card.Body>
             </Card>
             </div>
             </Container>
-            </div>
+        </div>
     )
 }
 
-export default myProfile
+export default CreateAccountUI
 
