@@ -10,7 +10,7 @@ const Styles = styled.div`
   }
   .navbar-brand {
     font-size: 1.4em;
-    color: #9FFFCB;
+    color: #98AFC7;
     &:hover { color: white; }
   }
   .form-center {

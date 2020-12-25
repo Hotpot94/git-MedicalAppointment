@@ -1,8 +1,8 @@
 import React from 'react'
 import {Form, Button, Card, Container} from 'react-bootstrap'
-import NavBar from "./../components/navbarUI";
+import NavBar from "../components/navbarUI";
 
-function myProfile() {
+function myProfileUI() {
     return (
        <div>
           <NavBar/>
@@ -51,5 +51,5 @@ function myProfile() {
     )
 }
 
-export default myProfile
+export default myProfileUI
 

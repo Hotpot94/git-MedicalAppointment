@@ -3,6 +3,7 @@ import {Form, Button, Card, Container} from 'react-bootstrap'
 import {Link} from 'react-router-dom';
 import NaviBar from "../components/Navbar/NavigationbarSA";
 import Sidebar from "../components/Sidebar/Sidebar";
+import * as s from './App.styles';
 
 class CreateAccountUI extends React.Component
 {
@@ -12,9 +13,11 @@ class CreateAccountUI extends React.Component
       return (
          <div style={{backgroundColor: '#98AFC7'}}>
             <NaviBar/>
-            <Sidebar/>
-
-            <h2 className= "text-center mb-4">My Profile</h2>
+            <s.AppS>
+               <Sidebar/>
+               <h2>My Profile</h2>
+               <h2> test </h2>
+            </s.AppS>
          </div>
       );
    }
